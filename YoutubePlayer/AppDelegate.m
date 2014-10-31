@@ -3,7 +3,7 @@
 //  YoutubePlayer
 //
 //  Created by Rajesh on 27/08/14.
-//  Copyright (c) 2014 BlazeDream. All rights reserved.
+//  Copyright (c) 2014 Rajesh. All rights reserved.
 //
 
 #import "AppDelegate.h"

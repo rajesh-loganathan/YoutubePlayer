@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1805D61319AF320E001BD7A5 /* NetworkError.png in Resources */ = {isa = PBXBuildFile; fileRef = 1805D61019AF320E001BD7A5 /* NetworkError.png */; };
+		1805D61419AF320E001BD7A5 /* CheckNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805D61219AF320E001BD7A5 /* CheckNetwork.m */; };
 		18215C6A19ADFF100099EF5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18215C6919ADFF100099EF5A /* Foundation.framework */; };
 		18215C6C19ADFF100099EF5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18215C6B19ADFF100099EF5A /* CoreGraphics.framework */; };
 		18215C6E19ADFF100099EF5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18215C6D19ADFF100099EF5A /* UIKit.framework */; };
@@ -22,6 +24,8 @@
 		18215C8E19ADFF110099EF5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18215C6D19ADFF100099EF5A /* UIKit.framework */; };
 		18215C9619ADFF110099EF5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18215C9419ADFF110099EF5A /* InfoPlist.strings */; };
 		18215C9819ADFF110099EF5A /* YoutubePlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18215C9719ADFF110099EF5A /* YoutubePlayerTests.m */; };
+		18215CA419ADFFAD0099EF5A /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18215CA319ADFFAD0099EF5A /* YTPlayerView.m */; };
+		18215CA619ADFFB20099EF5A /* youtubeplayer.html in Resources */ = {isa = PBXBuildFile; fileRef = 18215CA519ADFFB20099EF5A /* youtubeplayer.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1805D61019AF320E001BD7A5 /* NetworkError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NetworkError.png; sourceTree = "<group>"; };
+		1805D61119AF320E001BD7A5 /* CheckNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckNetwork.h; sourceTree = "<group>"; };
+		1805D61219AF320E001BD7A5 /* CheckNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckNetwork.m; sourceTree = "<group>"; };
 		18215C6619ADFF100099EF5A /* YoutubePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18215C6919ADFF100099EF5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18215C6B19ADFF100099EF5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +62,9 @@
 		18215C9319ADFF110099EF5A /* YoutubePlayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YoutubePlayerTests-Info.plist"; sourceTree = "<group>"; };
 		18215C9519ADFF110099EF5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18215C9719ADFF110099EF5A /* YoutubePlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoutubePlayerTests.m; sourceTree = "<group>"; };
+		18215CA219ADFFAD0099EF5A /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
+		18215CA319ADFFAD0099EF5A /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
+		18215CA519ADFFB20099EF5A /* youtubeplayer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = youtubeplayer.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +91,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1805D60E19AF31DA001BD7A5 /* Youtube */ = {
+			isa = PBXGroup;
+			children = (
+				18215CA219ADFFAD0099EF5A /* YTPlayerView.h */,
+				18215CA319ADFFAD0099EF5A /* YTPlayerView.m */,
+				18215CA519ADFFB20099EF5A /* youtubeplayer.html */,
+			);
+			name = Youtube;
+			sourceTree = "<group>";
+		};
+		1805D60F19AF31E5001BD7A5 /* Network Connection */ = {
+			isa = PBXGroup;
+			children = (
+				1805D61019AF320E001BD7A5 /* NetworkError.png */,
+				1805D61119AF320E001BD7A5 /* CheckNetwork.h */,
+				1805D61219AF320E001BD7A5 /* CheckNetwork.m */,
+			);
+			name = "Network Connection";
+			sourceTree = "<group>";
+		};
 		18215C5D19ADFF100099EF5A = {
 			isa = PBXGroup;
 			children = (
+				18215CA119ADFF9B0099EF5A /* Class */,
 				18215C6F19ADFF100099EF5A /* YoutubePlayer */,
 				18215C9119ADFF110099EF5A /* YoutubePlayerTests */,
 				18215C6819ADFF100099EF5A /* Frameworks */,
@@ -153,6 +184,15 @@
 				18215C9419ADFF110099EF5A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18215CA119ADFF9B0099EF5A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				1805D60F19AF31E5001BD7A5 /* Network Connection */,
+				1805D60E19AF31DA001BD7A5 /* Youtube */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +271,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18215CA619ADFFB20099EF5A /* youtubeplayer.html in Resources */,
 				18215C8019ADFF100099EF5A /* Main_iPad.storyboard in Resources */,
 				18215C8519ADFF100099EF5A /* Images.xcassets in Resources */,
+				1805D61319AF320E001BD7A5 /* NetworkError.png in Resources */,
 				18215C7D19ADFF100099EF5A /* Main_iPhone.storyboard in Resources */,
 				18215C7419ADFF100099EF5A /* InfoPlist.strings in Resources */,
 			);
@@ -253,8 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1805D61419AF320E001BD7A5 /* CheckNetwork.m in Sources */,
 				18215C8319ADFF100099EF5A /* ViewController.m in Sources */,
 				18215C7A19ADFF100099EF5A /* AppDelegate.m in Sources */,
+				18215CA419ADFFAD0099EF5A /* YTPlayerView.m in Sources */,
 				18215C7619ADFF100099EF5A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +514,7 @@
 				18215C9D19ADFF110099EF5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18215C9E19ADFF110099EF5A /* Build configuration list for PBXNativeTarget "YoutubePlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +523,7 @@
 				18215CA019ADFF110099EF5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
